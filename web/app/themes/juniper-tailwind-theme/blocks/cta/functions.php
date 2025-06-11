@@ -2,7 +2,7 @@
 
 add_action(
 	'wp_enqueue_scripts',
-	function() {
+	function () {
 		if ( has_block( 'acf/cta' ) ) {
 			$time       = time();
 			$theme_path = get_template_directory_uri();
@@ -15,14 +15,14 @@ add_action(
 
 add_action(
 	'admin_init',
-	function() {
+	function () {
 		add_editor_style( '/dist/blocks/cta/style.css' );
 	}
 );
 
 add_filter(
 	'timber/acf-gutenberg-blocks-data/cta',
-	function( $context ) {
+	function ( $context ) {
 		return $context;
 	}
 );

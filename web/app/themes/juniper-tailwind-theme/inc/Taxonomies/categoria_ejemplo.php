@@ -18,10 +18,9 @@ class categoria_ejemplo {
 			'label'        => $this->taxonomy_name,
 			'public'       => true,
 			'rewrite'      => false,
-			'hierarchical' => true
+			'hierarchical' => true,
 		);
 
 		register_taxonomy( $this->taxonomy_slug, 'cpt_example', $args );
 	}
-
 }
