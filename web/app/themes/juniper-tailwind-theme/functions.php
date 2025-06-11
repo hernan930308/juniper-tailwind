@@ -1,11 +1,12 @@
 <?php
+
 /**
  * Timber Juniper Theme
  * https://github.com/osomstudio/JuniperTheme
  *
- * @package  WordPress
- * @subpackage  Timber
- * @since   Timber 0.1
+ * @package    WordPress
+ * @subpackage Timber
+ * @since      Timber 0.1
  */
 
 /**
