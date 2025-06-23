@@ -1,31 +1,36 @@
 {
 	"name": "parcel-juniper-theme",
 	"version": "1.0.0",
+	"description": "",
+	"repository": {
+		"type": "git",
+		"url": ""
+	},
 	"dependencies": {
-		"@barba/core": "^2.9",
-		"@barba/prefetch": "^2.1",
-		"cypress": "^13.9",
-		"gsap": "^3.12.5",
-		"imagesloaded": "^5.0",
-		"jquery": "^3.7",
-		"tailwindcss": "^4.1.8"
+		"@barba/core": "^2.9.7",
+		"@barba/prefetch": "^2.1.10",
+		"tailwindcss": "^4.1.8",
+		"cypress": "^12.0.2",
+		"imagesloaded": "^4.1.4",
+		"jquery": "^3.6.0",
+		"postcss": "^8.3.6"
 	},
 	"devDependencies": {
-		"@parcel/transformer-sass": "^2.15.2",
-		"@tailwindcss/postcss": "^4.1.8",
-		"autoprefixer": "^10.4.21",
-		"browserslist": "^4.23",
-		"eslint": "^8.56",
-		"eslint-config-airbnb-base": "^15.0",
-		"husky": "^9.0",
-		"litepicker": "^2.0",
-		"parcel": "^2.12",
-		"postcss": "^8.5.4"
+		"@parcel/transformer-sass": "^2.5.0",
+		"eslint": "^8.40.0",
+		"eslint-config-airbnb-base": "^15.0.0",
+		"husky": "^4.3.8",
+		"litepicker": "^2.0.11",
+		"parcel": "^2.5.0",
+		"sass": "^1.26.5",
+		"browserslist": "^4.21.9",
+		"@tailwindcss/postcss": "^4.1.8"
 	},
 	"scripts": {
 		"test": "echo \"Error: no test specified\" && exit 1",
 		"dev":   "parcel watch src/css/_app.css src/js/_app.js blocks/**/*.js blocks/**/*.scss --public-url ./ --no-source-maps",
 		"build": "parcel build src/css/_app.css src/js/_app.js blocks/**/*.js blocks/**/*.scss --public-url ./",
+		"build-editor": "parcel build src/js/_editor.js --public-url ./",
 		"cypress": "./node_modules/.bin/cypress open",
 		"flint": "eslint --fix ./src/js/**/*",
 		"pretest": "eslint --ignore-path .gitignore ./src/js/**/* --fix && eslint --ignore-path .gitignore ./blocks/**/*.js --fix"

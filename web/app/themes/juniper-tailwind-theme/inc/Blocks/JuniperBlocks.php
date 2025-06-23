@@ -9,6 +9,7 @@ class JuniperBlocks {
 	public function __construct() {
 		$this->blocks_dir  = get_template_directory() . '/blocks';
 		$this->blocks_list = $this->get_all_blocks();
+
 	}
 
 	private function get_all_blocks() {

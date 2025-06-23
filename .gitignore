@@ -40,3 +40,7 @@ web-exppress
 
 ## ddev
 .ddev
+
+## Ignorar otros temas
+web/app/themes/*
+!web/app/themes/juniper-tailwind-theme/
