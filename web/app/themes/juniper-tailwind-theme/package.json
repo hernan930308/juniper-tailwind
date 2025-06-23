@@ -20,13 +20,12 @@
 		"husky": "^9.0",
 		"litepicker": "^2.0",
 		"parcel": "^2.12",
-		"postcss": "^8.5.4",
-		"vite": "^6.3.5"
+		"postcss": "^8.5.4"
 	},
 	"scripts": {
 		"test": "echo \"Error: no test specified\" && exit 1",
-		"dev": "vite",
-		"build": "vite build",
+		"dev":   "parcel watch src/css/_app.css src/js/_app.js blocks/**/*.js blocks/**/*.scss --public-url ./ --no-source-maps",
+		"build": "parcel build src/css/_app.css src/js/_app.js blocks/**/*.js blocks/**/*.scss --public-url ./",
 		"cypress": "./node_modules/.bin/cypress open",
 		"flint": "eslint --fix ./src/js/**/*",
 		"pretest": "eslint --ignore-path .gitignore ./src/js/**/* --fix && eslint --ignore-path .gitignore ./blocks/**/*.js --fix"
