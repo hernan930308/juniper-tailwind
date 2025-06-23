@@ -1,6 +1,10 @@
 a,
 button,
 .button {
-	transition: 300;
+	transition: $transition;
 	cursor: pointer;
+}
+
+.button {
+	border: 0.125rem solid #000;
 }
